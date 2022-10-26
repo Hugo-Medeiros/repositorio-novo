@@ -1,0 +1,62 @@
+programa {
+  funcao inicio() {
+
+    inteiro opcao, dinheiro1, dinheiro2, dinheiro3, dinheiro4, total
+
+    escreva ("Olá, seja, bem vindo! \n")
+    escreva ("\n")
+    escreva ("Dê uma olhada em nosso cardápio :) : \n")
+    escreva ("\n")
+    escreva ("===================================================== \n")
+    escreva ("|                                                   | \n")
+    escreva ("| Lanches         Código do pedido            Valor | \n")
+    escreva ("|                                                   | \n")
+    escreva ("|===================================================| \n")
+    escreva ("|                                                   | \n")
+    escreva ("|  X-Egg                100               R$ 12.00  | \n")
+    escreva ("|  X-Bacon              101               R$ 17.00  | \n")
+    escreva ("|  X-Salada             102               R$ 12.00  | \n")
+    escreva ("|  Refrigerante         103               R$ 10.00  | \n")  
+    escreva ("|                                                   | \n")
+    escreva ("===================================================== \n")
+
+    
+
+    escreva ("Digite o código do valor desejado: ")
+    leia opcao
+
+    se (opcao < 100 ou opcao > 103){
+      escreva ("OPÇÃO INVÁLIDA!")
+
+    }senao{
+}
+se(caso 100){
+  dinheiro1 = 12 
+}senao{
+  dinheiro1 = 0
+}
+
+se (caso 101){
+  dinheiro2 = 17
+}senao{
+  dinheiro2 = 0
+}
+
+se (caso 102){
+  dinheiro3 = 12
+  
+  }senao{
+    dinheiro3 = 0
+  }
+ 
+se (caso 103){
+  dinheiro4 = 10
+}senao {
+  dinheiro4 = 0
+}
+
+total = (dinheiro1 + dinheiro2 + dinheiro3 + dinheiro4)
+
+escreva ("O total do seu pedido é igual a: R$", total, ".00")
+  }
+}
